@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP3 - SQL dans l'html</title>
 </head>
 <body>
-    <h1><strong>1. Le langage SQL</strong> </h1>
-    <h2><strong>1.1. Définition</strong></h2>
-
-    <p>Le langage <trong>SQL</trong> (<strong>S</strong>tructured <strong>Q</strong>uery <strong>L</strong>anguage ou Langage de requêtes structuré) est un langage comprenant à lui seul l’ensemble
-        des ordres nécessaires à la création et à la gestion d’une base de données relationnelle. Il a été créé en 1986 et est en fait
-        l’aboutissement de plusieurs langages (Sequel en 1977, System/R, …) créés depuis l’apparition du modèle relationnel en 1970
-        (le modèle relationnel a été inventé par Mr Codd, un mathématicien de chez IBM). L'utilisation du langage SQL suppose
-        obligatoirement que les données aient été définies selon le modèle relationnel au sein d'un SGBDR (Oracle ©, SQLServer, mySQL,
-        PostgreSQL…).</p>
-
-    <h2><strong>1.2. Les différentes normes utilisées</strong></h2>
-
-    <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du <strong><u>langage SQL</u></strong>. La différence entre ces deux normes se situe
-        principalement dans l'écriture des jointures et dans l'ajout de fonctionnalités. :</p>
+    <button onclick="window.location.href='Main.html'; " style="margin: 3%; margin-top: 2%; margin-bottom: 1%;">Aller à l'accueil</button>
     
-    <ul style="list-style-type:none;">
-        <li>-   La norme <strong>SQL 89</strong> qui est encore très utilisée actuellement.</li>
-        <li>Point 2</li>
-        <li>Point 3</li>
-    </ul>
+    <div style="margin: 10%; margin-top: 0%;">
 
+        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <h1><strong>1. Le langage SQL</strong> </h1>
+            <h2><strong>1.1. Définition</strong></h2>
     
+            <p>Le langage <trong>SQL</trong> (<strong>S</strong>tructured <strong>Q</strong>uery <strong>L</strong>anguage ou Langage de requêtes structuré) est un langage comprenant à lui seul l’ensemble
+                des ordres nécessaires à la création et à la gestion d’une base de données relationnelle. Il a été créé en 1986 et est en fait
+                l’aboutissement de plusieurs langages (Sequel en 1977, System/R, …) créés depuis l’apparition du modèle relationnel en 1970
+                (le modèle relationnel a été inventé par Mr Codd, un mathématicien de chez IBM). L'utilisation du langage SQL suppose
+                obligatoirement que les données aient été définies selon le modèle relationnel au sein d'un SGBDR (Oracle ©, SQLServer, mySQL,
+                PostgreSQL…).</p>
+    
+            <h2><strong>1.2. Les différentes normes utilisées</strong></h2>
+    
+            <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du <strong><u>langage SQL</u></strong>. La différence entre ces deux normes se situe
+                principalement dans l'écriture des jointures et dans l'ajout de fonctionnalités. :</p>
+            
+            <ul style="list-style-type:none;">
+                <li>-   La norme <strong>SQL 89</strong> qui est encore très utilisée actuellement.</li>
+                <li>-   La norme <strong>SQL 92</strong>.</li>
+                <li>-   Aujourd'hui <strong>SQL 2011</strong>.</li>
+            </ul>
+    
+            <h1><strong>2. Le modèle de données utilisé dans le cours</strong></h1>
+            <h2><strong>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier
+            <br>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier
+            <br>2.3. La description textuelle des tables utilisées</strong></h2>
+        </div>
+        
+        <div style="font-family: 'Lucida Console','monospace'"">
+            <p><mark><strong>fonction_personnel</strong></mark> (code_fonction, libelle_fonction) <br><blockquote>Clé primaire : code_fonction</blockquote></p>
+    
+            <p><mark><strong>service</strong></mark> (num_service, libelle_service, capacite_accueil, date_ouverture)<br><blockquote>Clé primaire : num_service</blockquote></p>
+    
+        </div>
+
+    </div>
 </body>
 </html>
