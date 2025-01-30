@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP3 - SQL dans l'html</title>
+    <title>Exercice 2</title>
 </head>
 <body>
 
-    <button onclick="window.location.href='sommaire.html'; " style="margin: 3%; margin-top: 2%; margin-bottom: 1%;"><</button>
-    <button onclick="window.location.href='Main.html'; " style="margin: 3%; margin-top: 2%; margin-bottom: 1%;">Aller à l'accueil</button>
+    <button onclick="window.location.href='tp3.html'; " style="margin: 3%; margin-top: 2%; margin-bottom: 0%;"><</button>
+    <button onclick="window.location.href='../../Main.html'; " style="margin: 0%; margin-top: 2%; margin-bottom: 0%;">Aller à l'accueil</button>
+
     
     <div style="margin: 10%; margin-top: 0%;">
 
@@ -33,7 +34,13 @@
                 <li>-   La norme <strong>SQL 92</strong>.</li>
                 <li>-   Aujourd'hui <strong>SQL 2011</strong>.</li>
             </ul>
-    
+            
+            <p>Bien qu'il existe des normes il peut y avoir des différences entre SGBDR dans la syntaxe. Ainsi on peut lire sur le site de PostgreSQL:</p>
+            <ul>
+                <li><p>"Le développement de <big>PostgreSQL™</big> respecte le standard en vigueur, tant que celui-ci ne s'oppose pas aux fonctionnalités traditionnelles ou au bon sens…"</p></li>
+                <li><p>"SQL-92 définit trois niveaux de conformité : basique (ENTRY), intermédiaire (INTERMEDIATE) et complète (FULL). La majorité des systèmes de gestion de bases de données se prétendaient compatibles au standard SQL dès lors qu'ils se conformaient au niveau Entry"</p></li>
+            </ul>
+        
             <h1><strong>2. Le modèle de données utilisé dans le cours</strong></h1>
             <h2><strong>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier
             <br>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier
@@ -43,7 +50,7 @@
         <div style="font-family: 'Lucida Console','monospace'"">
             <p><mark><strong>fonction_personnel</strong></mark> (code_fonction, libelle_fonction) <br><blockquote>Clé primaire : code_fonction</blockquote></p>
     
-            <p><mark><strong>service</strong></mark> (num_service, libelle_service, capacite_accueil, date_ouverture)<br><blockquote>Clé primaire : num_service</blockquote></p>
+            <p><mark><strong>service</strong></mark> (num_service, libelle_service, capacite_accueil, date_ouverture)<br><blockquote>Clé primaire :             num_service</blockquote></p>
     
         </div>
 
