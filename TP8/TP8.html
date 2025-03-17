@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 8 - JS</title>
+
+    <script>
+        function exo1(){
+            let x = window.prompt("Qu'elle est la taille de la longueur du rectangle : ");
+            let y = window.prompt("Qu'elle est la taille de la largeur du rectangle : ");
+
+            window.alert("L'air du rectangle est de : " + x*y);
+        }
+
+        function exo2 (){
+
+            let faux = true
+            while (faux) {
+                let x = window.prompt("Qu'elle est la taille de la longueur du rectangle : ");
+                let y = window.prompt("Qu'elle est la taille de la largeur du rectangle : ");
+
+                if (window.confirm("Voulez vous utiliser x : "+x+" et y : "+y)) {
+                    window.alert("L'air du rectangle est de : " + x*y);
+                } 
+
+                faux = false
+            }
+            
+
+        function exo3(){
+            let x = window.prompt("Qu'elle est la taille de la longueur du rectangle : ");
+            let y = window.prompt("Qu'elle est la taille de la largeur du rectangle : ");
+
+            if ((isNaN(x) || isNaN(y) || x < 0 || y < 0)) {
+                window.alert("L'air du rectangle est de : " + x*y);
+                
+            } else {
+                exo2()
+            }
+
+
+        }
+
+            
+        }
+        </script>
+</head>
+<body>
+    <div style="margin: 10%; margin-top: 0%; margin-bottom: 0;">
+        <button onclick="window.location.href='../sommaire.html'; " style="margin: 3%; margin-top: 2%; margin-bottom: 0%;"><</button>
+        <button onclick="window.location.href='../main.html'; " style="margin: 0%; margin-top: 2%; margin-bottom: 0%;">Aller à l'accueil</button>
+    </div>
+
+    <button onclick="exo1()"; style="margin-top: 5%; margin: 5%;">Calculer l'air du rectangle</button>
+    <button onclick="exo2()"; style="margin-top: 5%;">Calculer l'air du rectangle avec confirmation</button>
+
+    
+    
+</body>
+</html>
